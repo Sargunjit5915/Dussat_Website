@@ -3,34 +3,46 @@
 <head>
   <title>DroneAstra — Dussat Global</title>
   <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0b1020">
-<link rel="icon" href="../assets/dt_logo.png" />
-<link rel="preload" href="../css/styles.css" as="style">
-<link rel="stylesheet" href="../css/styles.css">
-<meta name="description" content="Dussat Global Technologies — Professional drones and aerial systems for delivery, SAR, tethered surveillance, and counter‑UAS.">
-<meta property="og:title" content="Dussat Global Technologies" />
-<meta property="og:description" content="Professional drones and aerial systems for delivery, SAR, tethered surveillance, and counter‑UAS." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="assets/img/hero.png" />
-<script defer src="../js/app.js"></script>
-<script defer src="../js/products.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020">
+
+  <link rel="icon" href="../assets/dt_logo.png" />
+  <link rel="preload" href="../css/styles.css" as="style">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <meta name="description" content="DroneAstra — an anti-drone interceptor that detects, net-captures, and safely returns hostile drones. 4-bay ground launcher module." />
+  <meta property="og:title" content="DroneAstra — Dussat Global" />
+  <meta property="og:description" content="Detect • Capture with net • Safe return. 4 drones per ground launcher." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/img/droneastra.png" />
+
+  <script defer src="../js/app.js"></script>
+  <script defer src="../js/products.js"></script>
 
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Product", "name": "DroneAstra", "brand": {"@type": "Brand", "name": "Dussat Global"}, "description": "Counter\u2011UAS Intercept Platform", "image": ["/assets/img/placeholder.svg"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR", "availability": "https://schema.org/PreOrder"}}
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"DroneAstra",
+    "brand":{"@type":"Brand","name":"Dussat Global"},
+    "description":"Counter-UAS interceptor that detects, net-captures, and safely returns drones. 4-bay launcher module.",
+    "image":["../assets/img/droneastra.png"],
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/PreOrder"}
+  }
   </script>
 </head>
 <body>
-  <header class="site">
+
+<header class="site">
   <div class="container nav">
     <a class="brand" href="../index.html" aria-label="Dussat Global">
       <img alt="Dussat Global" src="../assets/dt_logo.png" height="32" />
-      <strong>Dussat Global</strong>
+      <strong>Dussat Global Technologies</strong>
     </a>
     <nav class="links" aria-label="Primary">
       <a href="../index.html#products">Products</a>
       <a href="../pages/solutions.html">Solutions</a>
-      <a href="../products/compare.html">Compare</a>
+      <a href="compare.html">Compare</a>
       <a href="../pages/support.html">Support</a>
       <a href="../pages/company.html">Company</a>
       <a class="cta" href="../pages/contact.html">Get a quote</a>
@@ -39,104 +51,171 @@
   </div>
 </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="copy reveal">
-        <div class="eyebrow">Product</div>
-        <h1>DroneAstra</h1>
-        <p>Counter‑UAS Intercept Platform</p>
-        <div style="margin-top:1rem; display:flex; gap:.75rem; flex-wrap:wrap;">
-          <a class="btn primary" href="pages/contact.html">Get a quote</a>
-          <a class="btn" href="products/compare.html">Compare</a>
-        </div>
-      </div>
-      <div class="hero-media reveal">
-        <img src="../assets/img/hero.png" alt="DroneAstra" loading="eager">
-      </div>
-    </section>
+<!-- HERO -->
+<section class="product-hero">
+  <img class="hero-bg" src="../assets/img/droneastra.png" alt="DroneAstra interceptor background">
+  <div class="product-hero__inner">
+    <div class="eyebrow">Counter-UAS interceptor</div>
+    <h1>DroneAstra</h1>
+    <p class="lead">Detect • Net capture • Safe return • 4-bay ground launcher</p>
+    <div class="hero-ctas">
+      <a class="btn primary" href="../pages/contact.html">Get a quote</a>
+      <a class="btn" href="#specs">View specs</a>
+    </div>
+  </div>
+</section>
 
-    <section class="section reveal">
-      <h2>Key features</h2>
-      <div class="cards">
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Rugged & reliable</h3>
-            <p class="meta">Weather‑tolerant design for Indian heat, dust, and monsoon.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Modular payloads</h3>
-            <p class="meta">Swap EO/IR, spotlight, delivery box, loudspeaker in under a minute.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Secure link</h3>
-            <p class="meta">Encrypted video/control with long‑range low latency.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Smart workflows</h3>
-            <p class="meta">Failsafes, RTH logic, and mission templates for field teams.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Sticky sub-nav -->
+<nav class="product-subnav" id="subnav" aria-label="Product sections">
+  <div class="container subnav__row">
+    <a href="#overview">Overview</a>
+    <a href="#intercept">Intercept</a>
+    <a href="#recovery">Recovery</a>
+    <!-- <a href="#launcher">Launcher</a> -->
+    <a href="#mosaic">Highlights</a>
+    <a href="#specs">Specs</a>
+    <a href="#box">In the box</a>
+  </div>
+</nav>
 
-    <section class="section reveal">
-      <h2>Specifications</h2>
-      <p>Key technical specs are summarized below. Replace placeholders with your exact values.</p>
-      <div class="table-wrap">
-        <table class="compare">
-          <tbody id="droneastra-specs">
-            <!-- Filled by inline script reading from DUSSAT_PRODUCTS -->
-          </tbody>
-        </table>
-      </div>
-      <script>
-        (function() {
-          const p = (window.DUSSAT_PRODUCTS||[]).find(x => x.slug === "droneastra");
-          if (!p) return;
-          const tbody = document.getElementById("droneastra-specs");
-          for (const [k,v] of Object.entries(p.specs)) {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `<th>${k}</th><td>${v}</td>`;
-            tbody.appendChild(tr);
-          }
-        })();
-      </script>
-    </section>
+<main>
 
-    <section class="section reveal">
-      <h2>In the box</h2>
-      <ul>
-        <li>DroneAstra aircraft / unit</li>
-        <li>Battery set</li>
-        <li>Charger / power module</li>
-        <li>Spare props / cables</li>
-        <li>Quick start guide</li>
+  <!-- Overview -->
+  <section id="overview" class="section feature-split reveal">
+    <div class="split__copy">
+      <h2>Non-kinetic counter-UAS, built for the field</h2>
+      <p>DroneAstra launches from a compact ground module, autonomously detects rogue drones, and closes in to neutralize them with a net-capture mechanism. Captured aircraft are carried back for safe handover and evidence chain.</p>
+      <ul class="bullets">
+        <li>Autonomous launch, detect, approach and capture</li>
+        <li>Net-based, non-kinetic interception</li>
+        <li>Rugged airframe designed for repeat sorties</li>
       </ul>
-    </section>
-  </main>
-  <footer class="site">
+      <p class="disclaimer" style="margin-top:.5rem;">* Use subject to local laws and operational policies.</p>
+    </div>
+    <div class="split__media">
+      <img src="../assets/img/droneastra_launch.png" alt="DroneAstra overview">
+    </div>
+  </section>
+
+  <!-- Feature 1: Intercept -->
+  <section id="intercept" class="section feature-split reveal">
+    <div class="split__media">
+      <!-- Placeholder image, replace with capture moment -->
+      <img src="../assets/img/droneastra_capture.png" alt="Net capture / intercept">
+    </div>
+    <div class="split__copy">
+      <h2>Detect, pursue, and net-capture</h2>
+      <p>On detection, DroneAstra plans a closing trajectory, stabilizes near the target, and fires a net to entangle props and disable lift. The interceptor then secures the captured UAV for transport.</p>
+      <ul class="bullets">
+        <li>EO/RF-assisted target detection & tracking</li>
+        <li>Close-proximity holding & net deployment</li>
+        <li>Non-destructive, evidence-preserving neutralization</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Feature 2: Recovery -->
+  <section id="recovery" class="section feature-split reveal">
+    <div class="split__copy">
+      <h2>Safe return with the captured drone</h2>
+      <p>After capture, the interceptor transitions to a controlled return profile. Load-aware control and safety envelopes ensure the aircraft brings the target back to ground crews without collateral damage.</p>
+      <ul class="bullets">
+        <li>Load-aware flight & descent profiles</li>
+        <li>Geofence, RTH and failsafes for urban ops</li>
+        <li>Secure handover at a designated drop zone</li>
+      </ul>
+    </div>
+    <div class="split__media">
+      <img src="../assets/img/droneastra_land.png" alt="Controlled recovery (placeholder)">
+    </div>
+  </section>
+
+  <!-- Feature 3: Launcher -->
+  <!-- <section id="launcher" class="section feature-split reveal">
+    <div class="split__media">
+      <img src="../assets/img/patang_delivery.png" alt="Ground module / launcher (placeholder)">
+    </div>
+    <div class="split__copy">
+      <h2>4-bay ground launcher for rapid response</h2>
+      <p>Each ground module houses up to <strong>4 intercept drones</strong> for back-to-back deployments. Swap batteries, reload nets, and relaunch in minutes to maintain perimeter coverage.</p>
+      <ul class="bullets">
+        <li>4 drones per module, ready to launch</li>
+        <li>Quick reload of nets & batteries</li>
+        <li>Compact footprint for mobile teams</li>
+      </ul>
+    </div>
+  </section> -->
+
+  <!-- Mosaic (2 tiles only) -->
+  <section id="mosaic" class="section mosaic reveal">
+    <div class="mosaic__tile" style="--img:url('../assets/img/droneastra_identify.png')">
+      <div class="mosaic__overlay"><h3>Autonomous Intercept</h3><p>Detect, close, capture — end-to-end.</p></div>
+    </div>
+    <div class="mosaic__tile" style="--img:url('../assets/img/droneastra_launcher.png')">
+      <div class="mosaic__overlay"><h3>Operator Link</h3><p>Encrypted control & debrief tooling.</p></div>
+    </div>
+  </section>
+
+  <!-- Specs -->
+  <section id="specs" class="section reveal">
+    <h2>Specifications</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <tbody id="droneastra-specs"></tbody>
+      </table>
+    </div>
+    <script>
+      (function() {
+        const p = (window.DUSSAT_PRODUCTS||[]).find(x => x.slug === "droneastra");
+        if (!p) return;
+        const tbody = document.getElementById("droneastra-specs");
+        for (const [k,v] of Object.entries(p.specs)) {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<th>${k}</th><td>${v || '-'}</td>`;
+          tbody.appendChild(tr);
+        }
+      })();
+    </script>
+  </section>
+
+  <!-- In the box -->
+  <section id="box" class="section reveal box-section">
+    <h2>In the box</h2>
+    <ul class="box-list">
+      <li>DroneAstra interceptor (x4 per launcher module)</li>
+      <li>Ground launcher module with power/comm</li>
+      <li>Net cartridges (training & operational)</li>
+      <li>Batteries, charger, and tool kit</li>
+      <li>Quick start & safety guide</li>
+    </ul>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-band">
+    <div class="container cta-band__row">
+      <h3>Want a live demo of DroneAstra?</h3>
+      <div class="cta-band__actions">
+        <a class="btn primary" href="../pages/contact.html">Talk to sales</a>
+        <a class="btn" href="compare.html">Compare models</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
   <div class="container cols">
     <div>
       <img src="../assets/logo.png" alt="" height="32" />
-      <p style="max-width: 30ch">Professional UAV systems for logistics, SAR, tethered surveillance, and counter‑UAS.</p>
+      <p style="max-width: 30ch">Professional UAV systems for logistics, SAR, tethered surveillance, and counter-UAS.</p>
     </div>
     <div>
       <strong>Products</strong><br/>
-      <a href="../products/trata.html">Trata</a><br/>
-      <a href="../products/patang.html">Patang</a><br/>
-      <a href="../products/droneastra.html">DroneAstra</a><br/>
-      <a href="../products/remote.html">Pro Remote</a><br/>
-      <a href="../products/compare.html">Compare</a>
+      <a href="trata.html">Trata</a><br/>
+      <a href="patang.html">Patang</a><br/>
+      <a href="droneastra.html">DroneAstra</a><br/>
+      <a href="remote.html">Pro Remote</a><br/>
+      <a href="compare.html">Compare</a>
     </div>
     <div>
       <strong>Company</strong><br/>
@@ -157,6 +236,28 @@
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>
+
+<!-- Sub-nav section sync -->
+<script>
+  const links = [...document.querySelectorAll('.product-subnav a')];
+  links.forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id && id.startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }));
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if (en.isIntersecting){
+        links.forEach(l=>l.classList.toggle('active', l.getAttribute('href') === '#'+en.target.id));
+      }
+    });
+  }, {rootMargin:'-40% 0px -55% 0px', threshold:0});
+  ['overview','intercept','recovery','launcher','mosaic','specs','box'].forEach(id=>{
+    const el=document.getElementById(id); if(el) obs.observe(el);
+  });
+</script>
 
 </body>
 </html>
