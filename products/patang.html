@@ -3,34 +3,46 @@
 <head>
   <title>Patang — Dussat Global</title>
   <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0b1020">
-<link rel="icon" href="../assets/dt_logo.png" />
-<link rel="preload" href="../css/styles.css" as="style">
-<link rel="stylesheet" href="../css/styles.css">
-<meta name="description" content="Dussat Global Technologies — Professional drones and aerial systems for delivery, SAR, tethered surveillance, and counter‑UAS.">
-<meta property="og:title" content="Dussat Global Technologies" />
-<meta property="og:description" content="Professional drones and aerial systems for delivery, SAR, tethered surveillance, and counter‑UAS." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="../assets/img/hero.png" />
-<script defer src="../js/app.js"></script>
-<script defer src="../js/products.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020">
+
+  <link rel="icon" href="../assets/dt_logo.png" />
+  <link rel="preload" href="../css/styles.css" as="style">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <meta name="description" content="Patang — a persistent tethered drone providing unlimited endurance, long-range camera zoom/recording, and 5G backhaul connectivity." />
+  <meta property="og:title" content="Patang — Dussat Global" />
+  <meta property="og:description" content="Persistent tethered drone with continuous power, 800× zoom camera, and 5G module." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/img/patang.png" />
+
+  <script defer src="../js/app.js"></script>
+  <script defer src="../js/products.js"></script>
 
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Product", "name": "Patang", "brand": {"@type": "Brand", "name": "Dussat Global"}, "description": "Persistent Tethered Drone", "image": ["/assets/img/placeholder.svg"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR", "availability": "https://schema.org/PreOrder"}}
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Patang",
+    "brand":{"@type":"Brand","name":"Dussat Global"},
+    "description":"Persistent Tethered Drone with 800× zoom camera and 5G backhaul.",
+    "image":["../assets/img/patang.png"],
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/PreOrder"}
+  }
   </script>
 </head>
 <body>
-  <header class="site">
+
+<header class="site">
   <div class="container nav">
     <a class="brand" href="../index.html" aria-label="Dussat Global">
       <img alt="Dussat Global" src="../assets/dt_logo.png" height="32" />
-      <strong>Dussat Global</strong>
+      <strong>Dussat Global Technologies</strong>
     </a>
     <nav class="links" aria-label="Primary">
       <a href="../index.html#products">Products</a>
       <a href="../pages/solutions.html">Solutions</a>
-      <a href="../products/compare.html">Compare</a>
+      <a href="compare.html">Compare</a>
       <a href="../pages/support.html">Support</a>
       <a href="../pages/company.html">Company</a>
       <a class="cta" href="../pages/contact.html">Get a quote</a>
@@ -39,104 +51,196 @@
   </div>
 </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="copy reveal">
-        <div class="eyebrow">Product</div>
-        <h1>Patang</h1>
-        <p>Persistent Tethered Drone</p>
-        <div style="margin-top:1rem; display:flex; gap:.75rem; flex-wrap:wrap;">
-          <a class="btn primary" href="../pages/contact.html">Get a quote</a>
-          <a class="btn" href="../products/compare.html">Compare</a>
-        </div>
-      </div>
-      <div class="hero-media reveal">
-        <img src="../assets/img/hero.png" alt="Patang" loading="eager">
-      </div>
-    </section>
+<!-- HERO -->
+<section class="product-hero">
+  <!-- transparent drone image over page bg -->
+  <img class="hero-bg" src="../assets/img/patang.png" alt="Patang tethered drone background">
+  <div class="product-hero__inner">
+    <div class="eyebrow">Persistent tethered drone</div>
+    <h1>Patang</h1>
+    <p class="lead">Unlimited endurance • Long-range PTZ camera • 5G backhaul connectivity</p>
+    <div class="hero-ctas">
+      <a class="btn primary" href="../pages/contact.html">Get a quote</a>
+      <a class="btn" href="#video">Watch video</a>
+    </div>
+  </div>
+</section>
 
-    <section class="section reveal">
-      <h2>Key features</h2>
-      <div class="cards">
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Rugged & reliable</h3>
-            <p class="meta">Weather‑tolerant design for Indian heat, dust, and monsoon.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Modular payloads</h3>
-            <p class="meta">Swap EO/IR, spotlight, delivery box, loudspeaker in under a minute.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Secure link</h3>
-            <p class="meta">Encrypted video/control with long‑range low latency.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-media" src="../assets/img/hero.png" alt="" loading="lazy">
-          <div class="card-body">
-            <h3>Smart workflows</h3>
-            <p class="meta">Failsafes, RTH logic, and mission templates for field teams.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Sticky sub-nav -->
+<nav class="product-subnav" id="subnav" aria-label="Product sections">
+  <div class="container subnav__row">
+    <a href="#overview">Overview</a>
+    <a href="#endurance">Endurance</a>
+    <a href="#camera">Camera</a>
+    <a href="#connectivity">Connectivity</a>
+    <a href="#mosaic">Highlights</a>
+    <a href="#specs">Specs</a>
+    <a href="#box">In the box</a>
+  </div>
+</nav>
 
-    <section class="section reveal">
-      <h2>Specifications</h2>
-      <p>Key technical specs are summarized below. Replace placeholders with your exact values.</p>
-      <div class="table-wrap">
-        <table class="compare">
-          <tbody id="patang-specs">
-            <!-- Filled by inline script reading from DUSSAT_PRODUCTS -->
-          </tbody>
-        </table>
-      </div>
-      <script>
-        (function() {
-          const p = (window.DUSSAT_PRODUCTS||[]).find(x => x.slug === "patang");
-          if (!p) return;
-          const tbody = document.getElementById("patang-specs");
-          for (const [k,v] of Object.entries(p.specs)) {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `<th>${k}</th><td>${v}</td>`;
-            tbody.appendChild(tr);
-          }
-        })();
-      </script>
-    </section>
+<main>
 
-    <section class="section reveal">
-      <h2>In the box</h2>
-      <ul>
-        <li>Patang aircraft / unit</li>
-        <li>Battery set</li>
-        <li>Charger / power module</li>
-        <li>Spare props / cables</li>
-        <li>Quick start guide</li>
+  <!-- Overview -->
+  <section id="overview" class="section feature-split reveal">
+    <div class="split__copy">
+      <h2>Uninterrupted aerial overwatch</h2>
+      <p>Patang is a vehicle-deployable tethered drone. Power and data flow through a smart tether, enabling truly continuous operations. Operators view the live feed, control zoom and ROI, and record footage from the ground unit inside the vehicle.</p>
+      <ul class="bullets">
+        <li>Drive–stop–fly in minutes</li>
+        <li>Continuous power & encrypted data over tether</li>
+        <li>All-weather design for long deployments</li>
       </ul>
-    </section>
-  </main>
-  <footer class="site">
+    </div>
+    <div class="split__media">
+      <img src="../assets/img/patang_armored.png" alt="Patang overview">
+    </div>
+  </section>
+
+  <!-- Endurance -->
+  <section id="endurance" class="section feature-split reveal">
+    <div class="split__media">
+      <img src="../assets/img/patang_delivery.png" alt="Smart tether / reel">
+    </div>
+    <div class="split__copy">
+      <h2>Unlimited endurance with smart tether</h2>
+      <p>The vehicle-mounted power module feeds Patang through a lightweight, high-strength tether. Auto reel-in/out, fault protection, and wind-hold logic keep the aircraft stable and safe for long days and nights.</p>
+      <ul class="bullets">
+        <li>Continuous flight (tether-powered)</li>
+        <li>Automated reel management & failsafes</li>
+        <li>Stable hover in challenging winds</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Camera -->
+  <section id="camera" class="section feature-split reveal">
+    <div class="split__copy">
+      <h2>Long-range intelligence with 800× zoom</h2>
+      <p>The integrated PTZ camera delivers <strong>800× zoom</strong> for stand-off viewing. Capture <strong>4K recordings</strong> and stream a clear <strong>1080p (1k) feed</strong> to operators on the ground. ROI zoom and fine PTZ control make target identification effortless.</p>
+      <ul class="bullets">
+        <li>4K recording • 1080p live stream</li>
+        <li>ROI zoom, precise PTZ control</li>
+        <li>Low-latency encrypted video</li>
+      </ul>
+    </div>
+    <div class="split__media">
+      <img src="../assets/img/patang_armored_2.png" alt="Operator view / PTZ control">
+    </div>
+  </section>
+
+  <!-- Connectivity -->
+  <section id="connectivity" class="section feature-split reveal">
+    <div class="split__media">
+      <img src="../assets/img/patang_5G.png" alt="5G connectivity module">
+    </div>
+    <div class="split__copy">
+      <h2>5G module for difficult coverage areas</h2>
+      <p>Patang can carry a 5G backhaul module to extend connectivity where terrestrial coverage is scarce. Use the airborne link for command, streaming, and remote coordination.</p>
+      <ul class="bullets">
+        <li>5G/LTE backhaul & local hotspot</li>
+        <li>Works alongside tether data link</li>
+        <li>Secure network transport end-to-end</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Mosaic / highlights -->
+  <section id="mosaic" class="section mosaic reveal">
+    <div class="mosaic__tile" style="--img:url('../assets/img/patang_armored.png')">
+      <div class="mosaic__overlay"><h3>Vehicle-integrated</h3><p>Power + control from inside the vehicle.</p></div>
+    </div>
+    <div class="mosaic__tile" style="--img:url('../assets/img/patang_app.png')">
+      <div class="mosaic__overlay"><h3>Operator UI</h3><p>Record, stream, ROI zoom, and PTZ.</p></div>
+    </div>
+    <div class="mosaic__tile" style="--img:url('../assets/img/patang_hr.png')">
+      <div class="mosaic__overlay"><h3>Situational Awareness</h3><p>Share live feeds with teams and HQ.</p></div>
+    </div>
+    <div class="mosaic__tile" style="--img:url('../assets/img/patang_thunder.png')">
+      <div class="mosaic__overlay"><h3>All-weather</h3><p>Designed for long outdoor deployments.</p></div>
+    </div>
+  </section>
+
+  <!-- Video -->
+<section id="video" class="section feature-split reveal">
+  <div class="split__media">
+    <video class="product-video"
+           controls
+           playsinline
+           muted
+           loop
+           preload="metadata"
+           poster="../assets/img/patang.png">
+      <source src="../assets/img/patang_video_web.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="split__copy">
+    <h2>See it in action</h2>
+    <a class="btn primary" href="../pages/contact.html">Talk to sales</a>
+  </div>
+</section>
+
+  <!-- Specs -->
+  <section id="specs" class="section reveal">
+    <h2>Specifications</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <tbody id="patang-specs"></tbody>
+      </table>
+    </div>
+    <script>
+      (function() {
+        const p = (window.DUSSAT_PRODUCTS||[]).find(x => x.slug === "patang");
+        if (!p) return;
+        const tbody = document.getElementById("patang-specs");
+        for (const [k,v] of Object.entries(p.specs)) {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<th>${k}</th><td>${v}</td>`;
+          tbody.appendChild(tr);
+        }
+      })();
+    </script>
+  </section>
+
+  <!-- In the box -->
+  <section id="box" class="section reveal box-section">
+    <h2>In the box</h2>
+    <ul class="box-list">
+      <li>Patang aircraft</li>
+      <li>Tether & smart reel module</li>
+      <li>Ground power/control unit (vehicle-mount)</li>
+      <li>Spare props / cables</li>
+      <li>Quick start guide</li>
+    </ul>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-band">
+    <div class="container cta-band__row">
+      <h3>Ready to deploy Patang?</h3>
+      <div class="cta-band__actions">
+        <a class="btn primary" href="../pages/contact.html">Get a quote</a>
+        <a class="btn" href="compare.html">Compare models</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
   <div class="container cols">
     <div>
       <img src="../assets/logo.png" alt="" height="32" />
-      <p style="max-width: 30ch">Professional UAV systems for logistics, SAR, tethered surveillance, and counter‑UAS.</p>
+      <p style="max-width: 30ch">Professional UAV systems for logistics, SAR, tethered surveillance, and counter-UAS.</p>
     </div>
     <div>
       <strong>Products</strong><br/>
-      <a href="../products/trata.html">Trata</a><br/>
-      <a href="../products/patang.html">Patang</a><br/>
-      <a href="../products/droneastra.html">DroneAstra</a><br/>
-      <a href="../products/remote.html">Pro Remote</a><br/>
-      <a href="../products/compare.html">Compare</a>
+      <a href="trata.html">Trata</a><br/>
+      <a href="patang.html">Patang</a><br/>
+      <a href="droneastra.html">DroneAstra</a><br/>
+      <a href="remote.html">Pro Remote</a><br/>
+      <a href="compare.html">Compare</a>
     </div>
     <div>
       <strong>Company</strong><br/>
@@ -157,6 +261,28 @@
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>
+
+<!-- Sub-nav section sync -->
+<script>
+  const links = [...document.querySelectorAll('.product-subnav a')];
+  links.forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id && id.startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }));
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if (en.isIntersecting){
+        links.forEach(l=>l.classList.toggle('active', l.getAttribute('href') === '#'+en.target.id));
+      }
+    });
+  }, {rootMargin:'-40% 0px -55% 0px', threshold:0});
+  ['overview','endurance','camera','connectivity','mosaic','specs','box'].forEach(id=>{
+    const el=document.getElementById(id); if(el) obs.observe(el);
+  });
+</script>
 
 </body>
 </html>
