@@ -537,6 +537,57 @@ footer a:hover { opacity:1; }
 
 img { max-width: 100%/*; height: auto; */}
 
+header .nav.has-mobile-menu { position: relative; }
+
+/* mobile menu styles */
+@media (max-width: 920px){
+  .nav .links {               /* hidden by default on phones */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: #fff;
+    padding: .75rem;
+    border-bottom: 1px solid rgba(15,23,42,.06);
+    box-shadow: 0 12px 24px rgba(2,8,23,.08);
+    border-radius: 0 0 16px 16px;
+    z-index: 60;
+  }
+  .nav .links.open {          /* becomes the dropdown */
+    display: grid;
+    gap: .5rem;
+  }
+  .nav .links a {
+    padding: .6rem .75rem;
+    background: var(--muted-surface);
+    border-radius: 12px;
+  }
+  .mobile-toggle { display: inline-flex; margin-left: auto; }
+}
+
+/* Tighter, cleaner footer on phones */
+@media (max-width: 600px){
+  footer.site { padding: 1.5rem 0; }
+  footer .cols {
+    grid-template-columns: 1fr;   /* already there, but restyles spacing */
+    gap: .75rem;
+  }
+  footer .cols > div:first-child { /* brand block */
+    text-align: center;
+  }
+  footer .cols > div:first-child p{
+    margin: .5rem auto 0;
+    max-width: 35ch;
+  }
+  footer .cols a{
+    display: inline-block;
+    margin: .25rem 0;
+  }
+  footer .cols strong{
+    display: block;
+    margin: .5rem 0 .25rem;
+  }
+}
 
 
 
