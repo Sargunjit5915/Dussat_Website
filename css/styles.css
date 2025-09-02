@@ -106,6 +106,12 @@ header.site {
   padding-top: 0rem;
 }
 
+main.quote-section > p {
+  text-align: justify;          
+  text-align-last: left;       
+  hyphens: auto;               
+}
+
 /* Strong */
 .brand strong {
   font-size: 1.25rem;   
@@ -310,5 +316,193 @@ footer a:hover { opacity:1; }
 .cta-band__row{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
 @media (max-width:800px){ .cta-band__row{ flex-direction:column; text-align:center; } }
 .cta-band__actions{ display:flex; gap:.8rem; flex-wrap:wrap; }
+
+.partner-strip{
+  background: #fff;
+  border-bottom: 1px solid rgba(15,23,42,.08);
+  padding: .6rem 0;
+}
+
+.partner-strip__row{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(140px, 1fr);  
+  gap: 1rem;
+  align-items: center;
+  overflow-x: auto;                        
+  padding: .25rem 0;
+  scrollbar-width: thin;
+}
+
+.partner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;                             
+  border: 1px solid rgba(2,8,23,.06);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.partner img{
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+}
+.partner:hover img{ filter: none; opacity: 1; transform: scale(1.02); }
+
+@media (min-width: 1000px){
+  .partner-strip__row{
+    grid-auto-flow: initial;
+    grid-template-columns: repeat(6, 1fr);  
+  }
+}
+
+/* --- Partner strip --- */
+.partner-strip {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+.partner-strip__row {
+  display: flex;
+  gap: 1rem;
+  padding: .75rem 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.partner-strip .partner {
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1px solid #eef2f7;
+  border-radius: 16px;
+  padding: .5rem 1rem;
+}
+.partner-strip .partner img {
+  height: 44px;
+  width: auto;
+  display: block;
+  filter: none !important;
+  opacity: 1 !important;
+}
+@media (max-width: 900px){
+  .partner-strip .partner img { height: 34px; }
+}
+
+
+/* --- Team / Advisory sections --- */
+.section.dark h2 {
+  color: #000000;
+  margin-bottom: 1.25rem;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+@media (max-width: 1000px){
+  .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px){
+  .people-grid { grid-template-columns: 1fr; }
+}
+
+.person {
+  background: #ffffff;              
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 1rem 1rem 1.25rem;
+  text-align: center;
+}
+
+.person__photo {
+  width: 100%;
+  max-height: 290px;       
+  aspect-ratio: auto; 
+  object-fit: contain; 
+  border-radius: 14px;
+  display: block;
+}
+
+.person h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.25rem;
+  text-align: center;      
+}
+
+.person .role {
+  margin: 0;               
+  line-height: 1.2;        
+  text-align: center;
+}
+
+.partner-strip--compact .partner-strip__row{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(14px, 2.2vw, 24px);
+  max-width: 920px;              
+  margin-inline: auto;           
+  justify-items: center;
+}
+
+.partner-strip--compact .partner{
+  width: clamp(160px, 26vw, 220px);
+  height: clamp(64px, 8.5vw, 90px);
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-strip--compact .partner img{
+  max-height: 48px;             
+  width: auto;
+}
+
+@media (max-width: 800px){
+  .partner-strip--compact .partner-strip__row{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px){
+  .partner-strip--compact .partner-strip__row{
+    grid-template-columns: 1fr;
+  }
+}
+
+.partner-strip__row{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: clamp(12px, 2vw, 24px);
+  justify-items: center;
+  overflow-x: visible; 
+}
+
+.partner-strip .partner{
+  width: 100%;
+  max-width: 220px;
+  height: clamp(64px, 8.5vw, 90px);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-strip .partner img{
+  max-height: 48px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
 
 
