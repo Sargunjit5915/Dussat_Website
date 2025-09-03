@@ -534,8 +534,9 @@ header .nav.has-mobile-menu { position: relative; }
     justify-content: center;  
     width: 100%;              
   }
-  .cta-band__actions .btn{
-    align-items: center;         
+  .cta-band__actions .btn {
+    margin: 0 auto;   
+    display: inline-flex;
   }
   .cta-band h3{ margin: 0; text-wrap: balance; }  
 }
