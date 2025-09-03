@@ -525,7 +525,7 @@ header .nav.has-mobile-menu { position: relative; }
     flex-direction: column;
     text-align: center;
     align-items: center;    
-    gap: .75rem;
+    /* gap: .75rem; */
   }
   .cta-band__actions{
     display: flex;
@@ -534,9 +534,9 @@ header .nav.has-mobile-menu { position: relative; }
     justify-content: center;  
     width: 100%;              
   }
-  .cta-band__actions .btn{
+  /* .cta-band__actions .btn{
     min-width: 180px;         
-  }
+  } */
   .cta-band h3{ margin: 0; text-wrap: balance; }  
 }
 
