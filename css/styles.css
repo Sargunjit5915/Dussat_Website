@@ -519,6 +519,27 @@ header .nav.has-mobile-menu { position: relative; }
   .mobile-toggle { display: inline-flex; margin-left: auto; }
 }
 
+/* CTA band — mobile tidy */
+@media (max-width: 800px){
+  .cta-band__row{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;    
+    gap: .75rem;
+  }
+  .cta-band__actions{
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+    justify-content: center;  
+    width: 100%;              
+  }
+  .cta-band__actions .btn{
+    min-width: 180px;         
+  }
+  .cta-band h3{ margin: 0; text-wrap: balance; }  
+}
+
 
 
 
