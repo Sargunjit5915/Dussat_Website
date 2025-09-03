@@ -347,6 +347,13 @@ footer a:hover { opacity:1; }
 .cta-band__row{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
 @media (max-width:800px){ .cta-band__row{ flex-direction:column; text-align:center; } }
 .cta-band__actions{ display:flex; gap:.8rem; flex-wrap:wrap; }
+.cta-band .btn {                    
+  color: #fff;
+  border-color: rgba(255,255,255,.32);
+}
+.cta-band .btn:hover {
+  border-color: rgba(255,255,255,.5);
+}
 
 .partner{
   display: flex;
@@ -521,25 +528,24 @@ header .nav.has-mobile-menu { position: relative; }
 
 /* CTA band — mobile tidy */
 @media (max-width: 800px){
-  .cta-band__row {
+  .cta-band__row{
     flex-direction: column;
     text-align: center;
     align-items: center;    
+    /* gap: .75rem; */
   }
-  .cta-band__actions {
+  .cta-band__actions{
     display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
     justify-content: center;  
-    align-items: center;
     width: 100%;              
   }
   .cta-band__actions .btn {
-    margin: 0 auto;   /* force center horizontally */
+    margin: 0 auto;   
     display: inline-flex;
   }
-  .cta-band h3 {
-    margin: 0 0 1rem 0;  /* give some space below heading */
-    text-wrap: balance;
-  }
+  .cta-band h3{ margin: 0; text-wrap: balance; }  
 }
 
 
