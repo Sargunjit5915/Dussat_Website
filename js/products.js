@@ -64,7 +64,7 @@ window.DUSSAT_PRODUCTS = [
   },
   {
     slug: "remote",
-    name: "Pro Remote",
+    name: "Suyantra",
     // tagline: "Long-Range Controller",
     hero: "/assets/img/placeholder.svg",
     price: "On request",

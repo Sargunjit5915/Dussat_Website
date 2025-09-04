@@ -14,7 +14,7 @@
   const subRow = document.querySelector('tr.subs');
   data.forEach(p => {
     const th = document.createElement('th');
-    th.innerHTML = `<a href="/products/${p.slug}.html" class="btn">${p.name}</a>`;
+    th.innerHTML = `<a href="../products/${p.slug}.html" class="btn">${p.name}</a>`;
     headRow.appendChild(th);
 
     const td = document.createElement('td');
